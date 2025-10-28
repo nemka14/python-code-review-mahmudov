@@ -1,0 +1,4 @@
+git checkout main  # Убедись, что ты в ветке main
+git pull origin main  # Подтяни последние изменения из main
+git checkout -b problematic-code  # Создай новую ветку problematic-code
+
