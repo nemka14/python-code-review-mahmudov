@@ -1,1 +1,22 @@
-git checkout problematic-code
+# Проблемный калькулятор с преднамеренными ошибками
+
+def SUM(x,y): # Ошибка 1: Нарушение PEP 8 — нестандартное имя функции
+    total= x+y # Ошибка 2: Нет пробелов вокруг оператора +
+    return total
+
+def DIVIDE(a,b): # Ошибка 3: Нарушение PEP 8 — нестандартное имя
+    return a/b # Ошибка 4: Нет проверки деления на ноль
+
+def multiply(a, b): 
+    tempVar = a * b 
+    return tempVar # Ошибка 5: Избыточная переменная вместо прямого return
+
+def subtract(num1, num2):
+    diff = num1 - num2
+    if diff > 75: # Ошибка 6: Магическое число 75 без пояснения
+        return diff
+    return 0 # Ошибка 7: Неожиданное возвращение 0
+
+# Тест
+resultVar = SUM(10, 5) # Ошибка 8: Неясное имя переменной resultVar
+print("Ответ:", resultVar)
